@@ -1,13 +1,13 @@
 void main(){
 
-  // for significa "para" e é utilizado quando sabemos quantas vezes queremos repetir um bloco de código. O for é composto por três partes: a inicialização, a condição e o incremento. A inicialização é executada uma vez, a condição é avaliada antes de cada repetição e o incremento é executado após cada repetição.
+  /* for significa "para" e é utilizado quando sabemos quantas vezes queremos repetir um bloco de código. O for é composto por três partes: a inicialização, a condição e o incremento. A inicialização é executada uma vez, a condição é avaliada antes de cada repetição e o incremento é executado após cada repetição. */
 
   // for loop
   for(int i = 100; i > 0; i = i-10){
     print('Concluí $i voltas');
   }
 
-  // Começa comparando a nossa energia, ou seja, ele avalia se a energia>0 e, caso seja, executa o código. Depois da execução, o código retorna para o começo do while e compara, novamente, se energia>0 e assim por diante.
+  /* Começa comparando a nossa energia, ou seja, ele avalia se a energia>0 e, caso seja, executa o código. Depois da execução, o código retorna para o começo do while e compara, novamente, se energia>0 e assim por diante. */
 
   // while loop
   int energia = 100;
@@ -17,7 +17,7 @@ void main(){
     energia = energia - 10;
   }
 
-  // Demos a primeira volta, tiramos a energia e, só então, comparamos se energia>0 para descobrir se podemos realizar outra volta. Isso altera minimamente o nosso código, mas pode facilitar nossa escrita.
+  /* Demos a primeira volta, tiramos a energia e, só então, comparamos se energia>0 para descobrir se podemos realizar outra volta. Isso altera minimamente o nosso código, mas pode facilitar nossa escrita. */
 
   // do while loop 
   do{
@@ -26,9 +26,9 @@ void main(){
   } // enquanto a energia for menor que 100, o loop continua 
   while(energia < 100);
 
-  // while(){} é significativo quando não temos certeza de quantas voltas precisamos. Além disso, podemos contar as voltas antes de executarmos a nossa ação, com o while(){}, ou depois de executarmos a nossa ação, com do{}while().
+  /* while(){} é significativo quando não temos certeza de quantas voltas precisamos. Além disso, podemos contar as voltas antes de executarmos a nossa ação, com o while(){}, ou depois de executarmos a nossa ação, com do{}while(). */
 
-  // O break e continue são comandos para controlar o fluxo do loop. O break interrompe o loop e o continue pula a iteração atual e vai para a próxima. O  continue é mais utilizado em loops for, mas pode ser utilizado em qualquer loop.
+  /* O break e continue são comandos para controlar o fluxo do loop. O break interrompe o loop e o continue pula a iteração atual e vai para a próxima. O  continue é mais utilizado em loops for, mas pode ser utilizado em qualquer loop. */
 
   // break e continue
     while (energia > 0) {

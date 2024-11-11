@@ -1,5 +1,9 @@
 void main(){
 
+    // https://dart.dev/guides
+
+    // exemplo de variáveis e tipos de dados em Dart
+
     int idade = 26;
     double altura = 1.86;
     bool geek = true;
