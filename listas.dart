@@ -4,7 +4,7 @@ void main () {
 List<String> nomes = ['Carlos', 'Ana', 'João'];
 
 // Acesso
-String primeiroNome = nomes[0]; // 'Carlos'
+// String primeiroNome = nomes[0]; 
 
 //print(primeiroNome);
 
@@ -17,9 +17,9 @@ nomes.remove('Ana');
 //print(primeiroNome);
 
 // Iteração
-for (String nome in nomes) {
-  //print(nome);
-  }
+// for (String nome in nomes) {
+//   print(nome);
+//   }
 
 ////////////////////////////////////////
 
