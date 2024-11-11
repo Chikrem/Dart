@@ -18,22 +18,30 @@ nomes.remove('Ana');
 
 // Iteração
 for (String nome in nomes) {
-  print(nome);
+  //print(nome);
   }
 
 ////////////////////////////////////////
 
+var idade = 26;   // variável inteira
+double altura = 1.86; // variável double
+bool geek = true;  // variável booleana
+const String nome = 'Carlos Aquino';  // constante
+final apelido; // inferência de tipo
+
+apelido = 'Carlim'; // final
+
 // Lista Dinâmica
 
-List<dynamic> listaDinamica = [26, 'Carlim', 'Carlos Aquino', 1.86, true];
+List<dynamic> listaDinamica = [idade, altura, nome, apelido, geek]; 
 
-print(listaDinamica);
+//print(listaDinamica);
 
-String frase = 'Eu sou ${listaDinamica[1]} \n'
-    'mas meu nome completo é: ${listaDinamica[2]}, \n'
-    'eu me considero geek? ${listaDinamica[4]}. \n'
-    'Eu tenho ${listaDinamica[3]} metros de altura e \n'
-    '${listaDinamica[0]} anos de idade';
+String frase = 'Eu sou ${listaDinamica[3]} \n'
+        'mas meu nome completo é: ${listaDinamica[2]}, \n'
+        'eu me considero geek? ${listaDinamica[4]}. \n'
+        'Eu tenho ${listaDinamica[1]} metros de altura e \n'
+        '${listaDinamica[0]} anos de idade';
 
 print(frase);
 
