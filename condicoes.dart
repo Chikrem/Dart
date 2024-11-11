@@ -13,9 +13,14 @@ apelido = 'Carlim'; // final
 
 bool maiorDeIdade;
 
+// if significa "se" e é utilizado para executar um bloco de código se uma condição for verdadeira. O bloco de código é executado se a condição for verdadeira e ignorado se a condição for falsa.
+
 if(idade>=18){
   maiorDeIdade = true;
 }
+
+// else significa "senão" e é utilizado para executar um bloco de código se a condição do if for falsa. O bloco de código é executado se a condição for falsa e ignorado se a condição for verdadeira.
+
 else{
   maiorDeIdade = false;
 }
