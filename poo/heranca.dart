@@ -39,7 +39,7 @@ class Cachorro extends Animal {
 }
 
 void main(){
-  var cachorro = Cachorro('Marrom', 'Rex', 3, 'Bulldog');
+  Cachorro cachorro = Cachorro('Marrom', 'Rex', 3, 'Bulldog');
 
   print('Cor: ${cachorro.cor}');
   print('Nome: ${cachorro.nome}');
