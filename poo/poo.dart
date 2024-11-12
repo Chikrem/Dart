@@ -1,8 +1,10 @@
 // Estudando conceitos de orientação a objetos com Dart
 void main(){
   // Criando uma classe
-  var carro1 = Carro(marca: 'Ford', modelo: 'Fiesta', ano: 2014, cor: 'Preto');
-  var carro2 = Carro(marca: 'Chevrolet', modelo: 'Onix', ano: 2018, cor: 'Branco');
+  // Classes são modelos que definem as características e comportamentos de um objeto.
+  var carro1 = Carro('Ford', 'Fiesta', 2014, 'Preto');
+   
+  var carro2 = Carro('Chevrolet', 'Cruze', 2018, 'Branco');
 
   print('Marca: ${carro1.marca}');
   print('Modelo: ${carro1.modelo}');
@@ -25,15 +27,18 @@ void main(){
 // Criando uma classe
 class Carro{
   // Propriedades
-  String? marca;
-  String? modelo;
-  int? ano;
-  String? cor;
+  // Propriedades são variáveis que representam as características de um objeto.
+  String marca;
+  String modelo;
+  int ano;
+  String cor;
 
   // Construtor
-  Carro({this.marca, this.modelo, this.ano, this.cor});
+  // Construtor é um método especial que é chamado quando um objeto é instanciado.
+  Carro(this.marca, this.modelo, this.ano, this.cor);
   
   // Métodos
+  // Métodos são funções que representam as ações de um objeto.
   void ligar(){
     print('O carro está ligado');
   }
