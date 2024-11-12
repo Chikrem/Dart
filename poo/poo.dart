@@ -1,4 +1,6 @@
 // Estudando conceitos de orientação a objetos com Dart
+import 'dart:math';
+
 void main(){
   // Criando uma classe
   // Classes são modelos que definem as características e comportamentos de um objeto.
@@ -32,6 +34,8 @@ class Carro{
   String modelo;
   int ano;
   String cor;
+  bool isLigado = false;
+  bool isAndando  = false;
 
   // Construtor
   // Construtor é um método especial que é chamado quando um objeto é instanciado.
@@ -40,7 +44,12 @@ class Carro{
   // Métodos
   // Métodos são funções que representam as ações de um objeto.
   void ligar(){
-    print('O carro está ligado');
+    if (this.isLigado == false){
+      this.isLigado = true;
+      print('O carro está ligado');
+    } else {
+      print('O carro já está ligado');
+    }
   }
   
   void acelerar(){
@@ -48,10 +57,19 @@ class Carro{
   }
   
   void frear(){
-    print('O carro está freando');
+    if (this.isAndando == false){
+      print('O carro já está parado');
+    } else {
+      print('O carro está freando');
+    }
   }
   
   void desligar(){
-    print('O carro está desligado');
+    if (this.isLigado == true){
+      this.isLigado = false;
+      print('O carro está desligado');
+    } else {
+      print('O carro já está desligado');
+    }
   }
 }
