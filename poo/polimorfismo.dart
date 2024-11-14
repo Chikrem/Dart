@@ -1,3 +1,4 @@
+// Final
 // Como funciona o polimorfismo em Dart
 // Polimorfismo é um conceito que permite que objetos de diferentes classes sejam tratados de maneira uniforme. Isso significa que um objeto de uma classe filha pode ser tratado como um objeto da classe pai.
 //
