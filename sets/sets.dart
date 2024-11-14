@@ -1,3 +1,5 @@
+// Os Sets em Dart são úteis quando você precisa de uma coleção de elementos exclusivos, sem importar a ordem.
+
 void main() {
   // Criando um Set de números inteiros
   Set<int> numeros = {1, 2, 3, 4, 5};
