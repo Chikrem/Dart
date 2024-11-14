@@ -1,13 +1,5 @@
 void main(){
 
-  // Objeto fruta
-  String fruta = 'Banana';
-  double peso = 0.5;	
-  String cor = 'Amarela';
-  String sabor = 'Doce';
-  int diasDesdeColheita = 5;
-  bool isMadura = funcEstaMadura(diasDesdeColheita);
-
 // Tipos de parâmetros
 
 // Parâmetros posicionais obrigatórios são aqueles que devem ser passados na ordem correta e não podem ser omitidos.

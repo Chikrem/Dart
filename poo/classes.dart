@@ -1,5 +1,4 @@
 // Estudando conceitos de orientação a objetos com Dart
-import 'dart:math';
 
 void main(){
   // Criando uma classe
