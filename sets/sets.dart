@@ -34,3 +34,17 @@ void main() {
   Set<int> diferenca = numeros.difference(outrosNumeros);
   print('Diferença dos Sets: $diferenca'); // Saída: Diferença dos Sets: {1, 3, 4}
 }
+
+// Criação do Set: Um Set é criado usando {} ou o construtor Set().
+
+// Adição de elementos: Elementos podem ser adicionados com add(), mas valores duplicados são ignorados.
+
+// Remoção de elementos: remove() é usado para excluir elementos do Set.
+
+// Verificação de existência: contains() verifica se um elemento está no Set.
+
+// União: union() combina elementos de dois Sets, sem duplicatas.
+
+// Interseção: intersection() retorna elementos comuns entre dois Sets.
+
+// Diferença: difference() retorna elementos que estão no primeiro Set, mas não no segundo.
