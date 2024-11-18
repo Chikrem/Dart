@@ -1,15 +1,15 @@
 
-  //  -Encapsular:
-  //    Quando queremos impedir que as informações de dentro da nossa classe sejam acessadas
-  //  facilmente, devemos começar a privatizar nossos parametros e métodos. A conduta de privatização
-  //  facilita a manutenção do seu código e impede que informações delicadas sejam manipuladas
-  //  levianamente.
-  //  -Getter:
-  //    Simplesmente Pegar os dados da informação que não é acessível por fora.
-  //  (habilitar a ação de pegar algo que não é seu)
-  //  -Setter:
-  //    Simplesmente Alterar a informação que não é alterável por fora.
-  //  (mudar valores de algo que não é seu)
+//  -Encapsular:
+//    Quando queremos impedir que as informações de dentro da nossa classe sejam acessadas
+//  facilmente, devemos começar a privatizar nossos parametros e métodos. A conduta de privatização
+//  facilita a manutenção do seu código e impede que informações delicadas sejam manipuladas
+//  levianamente.
+//  -Getter:
+//    Simplesmente Pegar os dados da informação que não é acessível por fora.
+//  (habilitar a ação de pegar algo que não é seu)
+//  -Setter:
+//    Simplesmente Alterar a informação que não é alterável por fora.
+//  (mudar valores de algo que não é seu)
 
 import 'transporte.dart';
 import 'viajar.dart';
