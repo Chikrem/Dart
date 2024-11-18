@@ -6,9 +6,11 @@ void main() {
   try {
     // Código que pode lançar uma exceção
     int resultado = 100 ~/ 0; // Tentativa de divisão por zero
+  // ignore: deprecated_member_use
   } on IntegerDivisionByZeroException {
     // Captura uma exceção específica
     print('Erro: Divisão por zero não é permitida.');
+
   } catch (e, stackTrace) {
     // Captura qualquer outra exceção
     print('Erro inesperado: $e');
