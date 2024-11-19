@@ -1,5 +1,3 @@
-// Final
-
 // Em Dart, exceptions são usadas para indicar que ocorreu um erro ou uma condição inesperada durante a execução do programa. Dart fornece uma maneira 
 // robusta de lidar com esses erros por meio de um sistema de tratamento de exceções que permite capturar e responder a esses eventos de forma controlada, 
 // evitando que o programa falhe inesperadamente.
