@@ -1,9 +1,5 @@
 import 'controllers/bank_controller.dart';
 import 'models/account.dart';
-
-
-
-
 void main() {
   // Criando o banco
   BankController bankController = BankController();
