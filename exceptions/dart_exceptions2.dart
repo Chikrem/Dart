@@ -3,6 +3,7 @@
 // evitando que o programa falhe inesperadamente.
 
 void main() {
+    // int resultado2 = 100 ~/ 0;
   try {
     // Código que pode lançar uma exceção
     int resultado = 100 ~/ 0; // Tentativa de divisão por zero
