@@ -19,12 +19,13 @@ void main() {
   // Fazendo transferência
   try{
   bool result = bankController.makeTransfer(
-      idSender: "Kako", idReceiver: "Ricarth", amount: 700);
+      idSender: "Kako", idReceiver: "Ricarth", amount: 600);
       if(result){
         print("Transação concluída com sucesso!");
       };
 
   } on SenderIdInvalidException catch (e){  // Verificar ID Válido
+      // print(e);
       print("O ID ${e.idSender} é inválido!");  
   } on ReceiverIdInvalidException catch (e){
       print("O ID ${e.idReceiver} é inválido");
