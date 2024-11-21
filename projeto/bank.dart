@@ -1,8 +1,40 @@
+import 'dart:ffi';
+import 'dart:math';
+
 import 'controllers/bank_controller.dart';
 import 'exceptions/bank_controller_exception.dart';
 import 'models/account.dart';
 
+void testingNullSafety(){
+  Account? myAccount;
+
+  //Simulando uma comunicação externa. O dado pode ou não chegar. Se não chegar, a conta será Null
+  Random rng = Random();
+
+  int randomNumber = rng.nextInt(10);
+
+  if (randomNumber >= 5){
+    myAccount = Account(name: "Conta Teste", balance: 1000, isAuthenticated: true);
+  }
+
+  print(myAccount.runtimeType);
+  //print(myAccount!.balance);  // Se cair no caso nulo, gera o erro.
+
+  // if (myAccount != null) {
+  //   print(myAccount.balance);
+  // } else {
+  //   print("Conta nula!");
+  // }
+
+  print(myAccount != null ? myAccount.balance : "Conta nula!");
+
+  print(myAccount?.balance);
+
+}
+
 void main() {
+
+  testingNullSafety();
 
   // Criando o banco
   BankController bankController = BankController();
