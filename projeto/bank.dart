@@ -6,29 +6,46 @@ import 'exceptions/bank_controller_exception.dart';
 import 'models/account.dart';
 
 void testingNullSafety(){
-  Account? myAccount;
+  Account? myAccount = Account(name: "Conta Teste", balance: 1000, isAuthenticated: true);;
 
   //Simulando uma comunicação externa. O dado pode ou não chegar. Se não chegar, a conta será Null
   Random rng = Random();
 
   int randomNumber = rng.nextInt(10);
 
-  if (randomNumber >= 5){
-    myAccount = Account(name: "Conta Teste", balance: 1000, isAuthenticated: true);
+  if (randomNumber <= 5){
+    myAccount. createdAt = DateTime.now();
   }
 
   print(myAccount.runtimeType);
-  //print(myAccount!.balance);  // Se cair no caso nulo, gera o erro.
+  print(myAccount.createdAt);
+  print(myAccount.createdAt?.day); // CreatedAt pode cair nulo
 
-  // if (myAccount != null) {
+  //print(myAccount!.balance);  // Se cair no caso nulo, gera o erro.
+  //print(myAccount.createdAt!.day); //  Se cair no caso nulo, gera o erro.
+
+  // if (myAccount != null) {   // Teste com IF-ELSE
   //   print(myAccount.balance);
+  //   if (myAccount.createdAt != null){
+  //     print(myAccount.createdAt.day);  // Gera erro mesmo com If
+  //   }
   // } else {
   //   print("Conta nula!");
   // }
 
-  print(myAccount != null ? myAccount.balance : "Conta nula!");
+    if (myAccount != null) {   // Teste com IF-ELSE
+    print(myAccount.balance);
+    if (myAccount.createdAt != null){
+      print(myAccount.createdAt!.day);  // Uso com segurança do ! pois é garantido não nulo com o IF
+    }
+  } else {
+    print("Conta nula!");
+  }
 
-  print(myAccount?.balance);
+  print(myAccount != null ? myAccount.balance : "Conta nula!"); // Teste Operador Ternário
+
+
+  print(myAccount?.balance);  // Chamada segura
 
 }
 
